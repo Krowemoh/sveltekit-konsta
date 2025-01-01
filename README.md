@@ -1,38 +1,31 @@
-# sv
+# Sveltekit KonstaUI Starter Template
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a starter template for Sveltekit with Tailwind and KonstaUI. It uses sqlite for the database.
 
-## Creating a project
+This template has the login and logout routes set up.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Quickstart
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+git clone https://github.com/Krowemoh/sveltekit-konsta.git
+cd sveltekit-konsta 
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+This will run the project on all interfaces on port 7091.
 
-To create a production version of your app:
+## Environment Variables
 
-```bash
-npm run build
+The `.env` file needs to be set up:
+
+```
+SECRET="Nawyxs4zKKxcxhKTce33GDAAmjvgFFqA"
+DATABASE="/home/username/svelte-konsta/db/db.sqlite"
+
+HOST=127.0.0.1
+PORT=6091
+BODY_SIZE_LIMIT=0
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The HOST and PORT information will be used when running it in live.

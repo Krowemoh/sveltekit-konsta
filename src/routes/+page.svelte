@@ -1,3 +1,16 @@
-<h1 class="text-3xl font-bold underline text-blue-600">
-    Hello world!
-</h1>
+<script>
+  import {
+    Page,
+    Navbar,
+    Block,
+  } from 'konsta/svelte';
+</script>
+
+<Page>
+  <Navbar title="My App" />
+
+  <Block strong>
+    <p class="text-blue-600">Here is svelte, tailwind and Konsta bundled up.</p>
+  </Block>
+</Page>
+

@@ -1,5 +1,8 @@
 <script>
     import "../app.css";
+    import { App } from 'konsta/svelte';
 </script>
 
-<slot />
+<App theme="ios">
+    <slot />
+</App>

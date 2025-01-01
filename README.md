@@ -7,8 +7,10 @@ This template has the login and logout routes set up.
 ## Quickstart
 
 ```
-git clone https://github.com/Krowemoh/sveltekit-konsta.git
-cd sveltekit-konsta 
+git clone https://github.com/Krowemoh/sveltekit-konsta.git my-app
+cd my-app
+rm -rf .git
+
 npm install
 npm run dev
 ```

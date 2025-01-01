@@ -20,6 +20,10 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
-		"konsta": "^4.0.1"
+		"bcrypt": "^5.1.1",
+		"better-sqlite3": "^11.7.0",
+		"dotenv": "^16.4.7",
+		"konsta": "^4.0.1",
+		"svelte-kit-cookie-session": "^4.0.0"
 	}
 }

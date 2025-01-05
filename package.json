@@ -23,6 +23,7 @@
 		"bcrypt": "^5.1.1",
 		"better-sqlite3": "^11.7.0",
 		"dotenv": "^16.4.7",
+		"framework7-icons": "^5.0.5",
 		"konsta": "^4.0.1",
 		"svelte-kit-cookie-session": "^4.0.0",
 		"sveltekit-page-transitions": "^0.0.8"

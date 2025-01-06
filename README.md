@@ -26,7 +26,7 @@ DATABASE="/home/username/svelte-konsta/db/db.sqlite"
 
 HOST=127.0.0.1
 PORT=6091
-BODY_SIZE_LIMIT=0
+BODY_SIZE_LIMIT=Infinity
 ```
 
 The HOST and PORT information will be used when running it in live.

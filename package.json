@@ -26,6 +26,7 @@
 		"framework7-icons": "^5.0.5",
 		"konsta": "^4.0.1",
 		"svelte-kit-cookie-session": "^4.0.0",
+		"svelte-lazy": "^1.2.11",
 		"sveltekit-page-transitions": "^0.0.8"
 	}
 }

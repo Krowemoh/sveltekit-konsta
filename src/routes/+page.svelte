@@ -3,6 +3,7 @@
         Page,
         Navbar,
         Block,
+        Link,
         Button,
     } from 'konsta/svelte';
 
@@ -14,7 +15,20 @@
 
 <PageTransition>
     <Page>
-        <Navbar title="My App" />
+        <Navbar title="My App">
+            <div slot="left"></div>
+            <div slot="right">
+                {#if session.active}
+                    <form action="/logout" method="POST">
+                        <Button type="submit" clear>
+                            Logout
+                        </Button>
+                    </form>
+                {:else}
+                    <Link href="/login" navbar>Login</Link>
+                {/if}
+            </div>
+        </Navbar>
 
         <Block strong>
             <h1 class="text-blue-600 mb-4 text-lg">
@@ -24,18 +38,6 @@
                 Here is svelte, tailwind and Konsta bundled up.
                 {/if}
             </h1>
-
-            {#if session.active}
-                <form action="/logout" method="POST">
-                    <Button type="submit" large>
-                        Logout
-                    </Button>
-                </form>
-            {:else}
-                <Button href="/login" large>
-                    Login
-                </Button>
-            {/if}
         </Block>
     </Page>
 </PageTransition>

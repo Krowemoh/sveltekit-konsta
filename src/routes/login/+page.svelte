@@ -3,6 +3,7 @@
         Page, Navbar, 
         Block, BlockTitle,
         List, ListInput,
+        NavbarBackLink,
         Button,
     } from 'konsta/svelte';
     import { PageTransition } from 'sveltekit-page-transitions'
@@ -14,7 +15,9 @@
 
 <PageTransition>
     <Page>
-        <Navbar title="Sign In" />
+        <Navbar title="Sign In">
+            <NavbarBackLink slot="left" text="Back" href="/" />
+        </Navbar>
 
         <form method="POST" action="">
             <List strongIos insetIos>
